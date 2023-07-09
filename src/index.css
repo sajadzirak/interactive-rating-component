@@ -32,9 +32,125 @@ The designs were created to the following widths:
 - Family: [Overpass](https://fonts.google.com/specimen/Overpass)
 - Weights: 400, 700 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.main-container {
+    background: linear-gradient(
+        to bottom,
+        hsl(212, 18%, 14%),
+        hsl(220, 16%, 11%)
+      );
+    border-radius: 5%;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#star-icon {
+    background-color: hsl(213, 19%, 18%);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.main-container h1, h2 {
+    color: #fff;
+    margin: 0.8rem 0;
+}
+
+.main-container p {
+    color: hsl(216, 12%, 54%);
+    line-height: 1.4rem;
+    font-size: 1rem;
+}
+
+.main-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+
+.main-container ul button {
+    background-color: hsl(213, 19%, 18%);
+    border: 0;
+    border-radius: 50%;
+    padding: 1rem;
+    color: hsl(216, 12%, 54%);
+    width: 3rem;
+    height: 3rem;
+}
+
+.main-container ul button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    transition: 0.3s;
+}
+
+.main-container ul button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+}
+
+.main-container button {
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    color: #fff;
+    border-radius: 1.7rem;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    letter-spacing: 0.08rem;
+    font-weight: 700;
+}
+
+.main-container button:hover {
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+    transition: 0.3s;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+p.your-rate {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 18%);
+    padding: 0.4rem 0.8rem 0.3rem;
+    margin: 1.7rem 0 1rem;
+    border-radius: 1.2rem;
+}
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 1rem; 
+    text-align: center; 
+    color: #fff;
 }
 
 .attribution a { 
